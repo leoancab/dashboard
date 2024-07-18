@@ -4,19 +4,39 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Grid from '@mui/material/Unstable_Grid2';
 import Indicator from './components/Indicator';
+import Summary from './components/Summary';
+import BasicTable from './components/BasicTable';
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
+    /*
     <Grid container spacing={5}>
-      <Grid>1</Grid>
-      <Grid>2</Grid>
-      <Grid>3</Grid>
-      <Grid>4</Grid>
-      <Grid>5</Grid>
-      <Grid>6</Grid>
+      <Grid xs={12} sm={4} md={3} lg={2}>1</Grid>
+      <Grid xs={6} sm={4} md={3} lg={2}>2</Grid>
+      <Grid xs={6} sm={4} md={3} lg={2}>3</Grid>
+      <Grid xs={12} sm={4} md={3} lg={2}>4</Grid>
+      <Grid xs={6} sm={4} md={6} lg={2}>5</Grid>
+      <Grid xs={6} sm={4} md={6} lg={2}>6</Grid>
+      
     </Grid>
+    */
+    /*
+     <Grid xs={6} md={4} lg={2}>
+       <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} />
+     </Grid>
+     */
+    /*
+    <Grid xs={6} sm={4} md={3} lg={2}>
+      <Summary></Summary>
+    </Grid>
+    */
+    <Grid xs={12} md={6} lg={9} >
+      <BasicTable />
+    </Grid>
+
   )
 }
 
